@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Potea - Plant E-Commerce</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="splash_text"><![CDATA[The best plant e-commerce & online store app of the century for your needs!]]></string>
-    <string name="potea">Potea</string>
-    <string name="splash_title">Welcome to 👋</string>
-</resources>
