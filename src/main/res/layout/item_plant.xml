@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:background="@drawable/bg_card">
+
+    <!-- Image + Heart Icon -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imgPlant"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+        <!-- Heart icon -->
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|end"
+            android:background="@null"
+            android:src="@drawable/ic_favorite"
+            android:contentDescription="Like" />
+    </FrameLayout>
+
+    <!-- Plant Name -->
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer Plant"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Rating + Sold -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical">
+
+        <!-- Star icon -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_star"
+            app:tint="#1DB954" />
+
+        <TextView
+            android:id="@+id/txtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"/>
+
+        <!-- Divider -->
+        <TextView
+            android:text=" | "
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <!-- Sold count -->
+        <TextView
+            android:id="@+id/txtSold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,268 Sold"
+            android:textSize="12sp"
+            android:textColor="#1DB954"
+            android:background="@drawable/bg_sold"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+    </LinearLayout>
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$29"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#1DB954"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
